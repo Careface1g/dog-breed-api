@@ -45,10 +45,10 @@ def show_result(response):
     data = response.json()
 
     if not data["is_dog"]:
-        print(f"No dogo detected (dog probability: {data['dog_probability']:.1%})")
+        print(f"No dogo detected (dog probability: {data['dog_probability']:.1%})") # Needs at least 50% to be a dog
         return
 
-    print("Dogo detected!\n")
+    print("Dogo detected!")
     number = 1
     for prediction in data["predictions"]:
         breed = prediction["breed"].title()

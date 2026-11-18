@@ -3,8 +3,8 @@ from io import BytesIO
 from fastapi import HTTPException
 from PIL import Image, UnidentifiedImageError
 
-ALLOWED_TYPES = {"image/jpeg", "image/png", "image/webp"}
-ALLOWED_FORMATS = {"JPEG", "PNG", "WEBP"}
+ALLOWED_TYPES = {"image/jpeg", "image/png", "image/webp", "image/jpg"}
+ALLOWED_FORMATS = {"JPEG", "PNG", "WEBP", "JPG"}
 MAX_FILE_SIZE = 10 * 1024 * 1024
 
 
