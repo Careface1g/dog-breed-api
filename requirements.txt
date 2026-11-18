@@ -4,4 +4,3 @@ pillow
 torch
 torchvision
 requests
-pytest
