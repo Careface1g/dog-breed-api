@@ -16,7 +16,7 @@ def validate_image(contents: bytes, content_type: str | None) -> Image.Image:
         )
 
     if len(contents) > MAX_FILE_SIZE:
-        raise HTTPException(status_code=413, detail="File too large. Maximum size is 10 MB.")
+        raise HTTPException(status_code=413, detail="File too large. Maximum size is 5 MB.")
 
     try:
         image = Image.open(BytesIO(contents))
