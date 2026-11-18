@@ -5,7 +5,7 @@ from PIL import Image, UnidentifiedImageError
 
 ALLOWED_TYPES = {"image/jpeg", "image/png", "image/webp", "image/jpg"}
 ALLOWED_FORMATS = {"JPEG", "PNG", "WEBP", "JPG"}
-MAX_FILE_SIZE = 10 * 1024 * 1024
+MAX_FILE_SIZE = 5 * 1024 * 1024
 
 
 def validate_image(contents: bytes, content_type: str | None) -> Image.Image:
